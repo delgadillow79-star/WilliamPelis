@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="logo">WilliamPelis</h1>
+        <nav class="navigation">
+            <button id="nav-inicio" class="nav-button active">Inicio</button>
+            <button id="nav-buscar" class="nav-button">Buscar</button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="inicio-section" class="content-section active">
+            <h2>Películas Populares</h2>
+            <div id="movie-grid-inicio" class="movie-grid">
+                </div>
+        </section>
+
+        <section id="buscar-section" class="content-section">
+            <div class="search-controls">
+                <input type="text" id="search-input" placeholder="Buscar película por título...">
+                <div id="alphabet-filter" class="alphabet-filter">
+                    </div>
+            </div>
+            <div id="movie-grid-buscar" class="movie-grid">
+                </div>
+            <p id="no-results" class="no-results-message">No se encontraron películas que coincidan con tu búsqueda.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

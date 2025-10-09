@@ -1,188 +1,187 @@
-/* --- Reseteo Básico y Estilos Globales --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #141414;
-    color: #e5e5e5;
-}
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #141414;
+            color: #e5e5e5;
+        }
 
-/* --- Encabezado y Navegación --- */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
-    background-color: #080808;
-    border-bottom: 1px solid #222;
-}
+        /* --- Encabezado y Navegación --- */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 3rem;
+            background-color: #080808;
+            border-bottom: 1px solid #222;
+        }
 
-.logo {
-    font-size: 1.8rem;
-    color: #e50914; /* Color rojo tipo Netflix */
-    font-weight: 700;
-}
+        .logo {
+            font-size: 1.8rem;
+            color: #e50914; /* Color rojo tipo Netflix */
+            font-weight: 700;
+        }
 
-.nav-button {
-    background: none;
-    border: none;
-    color: #a0a0a0;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-left: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem 0;
-    border-bottom: 2px solid transparent;
-    transition: color 0.3s, border-color 0.3s;
-}
+        .nav-button {
+            background: none;
+            border: none;
+            color: #a0a0a0;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-left: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+            transition: color 0.3s, border-color 0.3s;
+        }
 
-.nav-button:hover {
-    color: #fff;
-}
+        .nav-button:hover {
+            color: #fff;
+        }
 
-.nav-button.active {
-    color: #fff;
-    border-bottom: 2px solid #e50914;
-}
+        .nav-button.active {
+            color: #fff;
+            border-bottom: 2px solid #e50914;
+        }
 
-/* --- Contenido Principal y Secciones --- */
-.main-content {
-    padding: 2rem 3rem;
-}
+        /* --- Contenido Principal y Secciones --- */
+        .main-content {
+            padding: 2rem 3rem;
+        }
 
-.content-section {
-    display: none; /* Ocultar secciones por defecto */
-}
+        .content-section {
+            display: none; /* Ocultar secciones por defecto */
+        }
 
-.content-section.active {
-    display: block; /* Mostrar solo la sección activa */
-}
+        .content-section.active {
+            display: block; /* Mostrar solo la sección activa */
+        }
 
-.content-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-}
+        .content-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
 
-/* --- Cuadrícula de Películas (Movie Grid) --- */
-.movie-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem; /* Espacio entre tarjetas */
-}
+        /* --- Cuadrícula de Películas (Movie Grid) --- */
+        .movie-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem; /* Espacio entre tarjetas */
+        }
 
-.movie-card {
-    background-color: #1c1c1c;
-    border-radius: 8px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex-basis: calc(50% - 1.5rem); /* 2 columnas en móvil */
-    display: flex;
-    flex-direction: column;
-}
+        .movie-card {
+            background-color: #1c1c1c;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex-basis: calc(50% - 1.5rem); /* 2 columnas en móvil */
+            display: flex;
+            flex-direction: column;
+        }
 
-.movie-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
+        .movie-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
 
-.movie-card img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 2 / 3; /* Proporción de póster de película */
-    object-fit: cover;
-}
+        .movie-card img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 2 / 3; /* Proporción de póster de película */
+            object-fit: cover;
+        }
 
-/* --- Controles de Búsqueda y Filtro --- */
-.search-controls {
-    margin-bottom: 2rem;
-}
+        /* --- Controles de Búsqueda y Filtro --- */
+        .search-controls {
+            margin-bottom: 2rem;
+        }
 
-#search-input {
-    width: 100%;
-    padding: 0.8rem 1rem;
-    font-size: 1rem;
-    background-color: #333;
-    border: 1px solid #555;
-    border-radius: 4px;
-    color: #fff;
-    margin-bottom: 1.5rem;
-}
+        #search-input {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            font-size: 1rem;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 4px;
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
 
-.alphabet-filter {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-}
+        .alphabet-filter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+        }
 
-.alphabet-filter button {
-    background-color: #333;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 0.9rem;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    transition: background-color 0.3s, transform 0.2s;
-}
+        .alphabet-filter button {
+            background-color: #333;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 0.9rem;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            transition: background-color 0.3s, transform 0.2s;
+        }
 
-.alphabet-filter button:hover {
-    background-color: #e50914;
-}
+        .alphabet-filter button:hover {
+            background-color: #e50914;
+        }
 
-.alphabet-filter button.active-filter {
-    background-color: #e50914;
-    transform: scale(1.1);
-}
+        .alphabet-filter button.active-filter {
+            background-color: #e50914;
+            transform: scale(1.1);
+        }
 
-/* --- Mensaje de "No Resultados" --- */
-.no-results-message {
-    display: none; /* Oculto por defecto */
-    width: 100%;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 3rem 0;
-}
+        /* --- Mensaje de "No Resultados" --- */
+        .no-results-message {
+            display: none; /* Oculto por defecto */
+            width: 100%;
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 3rem 0;
+        }
 
-/* --- Media Queries para Responsividad --- */
+        /* --- Media Queries para Responsividad --- */
 
-/* Tablets pequeñas (a partir de 600px) - 3 columnas */
-@media (min-width: 600px) {
-    .movie-card {
-        flex-basis: calc(33.333% - 1.5rem);
-    }
-}
+        /* Tablets pequeñas (a partir de 600px) - 3 columnas */
+        @media (min-width: 600px) {
+            .movie-card {
+                flex-basis: calc(33.333% - 1.5rem);
+            }
+        }
 
-/* Tablets grandes (a partir de 900px) - 4 columnas */
-@media (min-width: 900px) {
-    .movie-card {
-        flex-basis: calc(25% - 1.5rem);
-    }
-}
+        /* Tablets grandes (a partir de 900px) - 4 columnas */
+        @media (min-width: 900px) {
+            .movie-card {
+                flex-basis: calc(25% - 1.5rem);
+            }
+        }
 
-/* Escritorios (a partir de 1200px) - 6 columnas */
-@media (min-width: 1200px) {
-    .movie-card {
-        flex-basis: calc(16.666% - 1.5rem);
-    }
-}
+        /* Escritorios (a partir de 1200px) - 6 columnas */
+        @media (min-width: 1200px) {
+            .movie-card {
+                flex-basis: calc(16.666% - 1.5rem);
+            }
+        }
 
-/* Ajustes de padding en pantallas pequeñas */
-@media (max-width: 600px) {
-    .header, .main-content {
-        padding: 1rem;
-    }
-    .logo {
-        font-size: 1.5rem;
-    }
-    .nav-button {
-        margin-left: 1rem;
-    }
-}
+        /* Ajustes de padding en pantallas pequeñas */
+        @media (max-width: 600px) {
+            .header, .main-content {
+                padding: 1rem;
+            }
+            .logo {
+                font-size: 1.5rem;
+            }
+            .nav-button {
+                margin-left: 1rem;
+            }
+        }

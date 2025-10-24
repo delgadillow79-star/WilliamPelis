@@ -6,8 +6,9 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #141414;
-            color: #e5e5e5;
+            background-color: #010115;
+            color: #daa520; 
+            color: #daa520;
         }
 
         /* --- Encabezado y Navegación --- */
@@ -16,20 +17,20 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem 3rem;
-            background-color: #080808;
+            background-color: 00172D;
             border-bottom: 1px solid #222;
         }
 
         .logo {
             font-size: 1.8rem;
-            color: #e50914; /* Color rojo tipo Netflix */
+            color: #daa520; 
             font-weight: 700;
         }
 
         .nav-button {
             background: none;
             border: none;
-            color: #a0a0a0;
+            color: #daa520;
             font-size: 1rem;
             font-weight: 500;
             margin-left: 1.5rem;
@@ -45,7 +46,7 @@
 
         .nav-button.active {
             color: #fff;
-            border-bottom: 2px solid #e50914;
+            border-bottom: 2px solid #daa520;
         }
 
         /* --- Contenido Principal y Secciones --- */
@@ -54,7 +55,7 @@
         }
 
         .content-section {
-            display: none; /* Ocultar secciones por defecto */
+            display: none; 
         }
 
         .content-section.active {
@@ -75,7 +76,7 @@
         }
 
         .movie-card {
-            background-color: #1c1c1c;
+            background-color: #00040761;
             border-radius: 8px;
             overflow: hidden;
             cursor: pointer;
@@ -93,7 +94,7 @@
         .movie-card img {
             width: 100%;
             height: auto;
-            aspect-ratio: 2 / 3; /* Proporción de póster de película */
+            aspect-ratio: 2 / 3; 
             object-fit: cover;
         }
 
@@ -106,8 +107,8 @@
             width: 100%;
             padding: 0.8rem 1rem;
             font-size: 1rem;
-            background-color: #333;
-            border: 1px solid #555;
+            background-color: #daa520;
+            border: 1px solid #daa520;
             border-radius: 4px;
             color: #fff;
             margin-bottom: 1.5rem;
@@ -123,7 +124,7 @@
         .alphabet-filter button {
             background-color: #333;
             border: none;
-            color: #fff;
+            color: #daa520;
             cursor: pointer;
             font-size: 0.9rem;
             width: 35px;
@@ -133,11 +134,11 @@
         }
 
         .alphabet-filter button:hover {
-            background-color: #e50914;
+            background-color: #daa520;
         }
 
         .alphabet-filter button.active-filter {
-            background-color: #e50914;
+            background-color: #daa520;
             transform: scale(1.1);
         }
 

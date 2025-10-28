@@ -89,6 +89,7 @@
         .movie-card:hover {
             transform: scale(1.05);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            
         }
 
         .movie-card img {
@@ -110,7 +111,7 @@
             background-color: #daa520;
             border: 1px solid #daa520;
             border-radius: 4px;
-            color: #fff;
+            color: #0b0b0b;
             margin-bottom: 1.5rem;
         }
 
@@ -124,7 +125,7 @@
         .alphabet-filter button {
             background-color: #333;
             border: none;
-            color: #daa520;
+            color: #0f0f0e;
             cursor: pointer;
             font-size: 0.9rem;
             width: 35px;
@@ -150,6 +151,26 @@
             font-size: 1.2rem;
             padding: 3rem 0;
         }
+        footer {
+    /* centrar todo el texto dentro del footer */
+    text-align: center;
+    
+    /* Estilos de apariencia */
+    padding: 20px 0; /* Espacio vertical para que no se pegue al contenido */
+    background-color: #040836; /* Fondo oscuro */
+    color: #daa520; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 14px;
+    /* Estilos para el enlace de GitHub */
+
+}
+.developer-credit {
+    color: #daa520; /* <<--  DEFINE EL COLOR DEL ENLACE */
+    text-decoration: underline;
+    font-weight: 100;
+    
+    }
+
 
         /* --- Media Queries para Responsividad --- */
 
@@ -186,3 +207,4 @@
                 margin-left: 1rem;
             }
         }
+        

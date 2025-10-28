@@ -2,11 +2,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     var movies = [
         { title: 'Inception', imageUrl: 'https://m.media-amazon.com/images/I/919mVr6ikcL._UF894,1000_QL80_.jpg' },
-        { title: 'The Shawshank Redemption', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb9670Mi_MG5ezDhuF-mDPXtisIFZZPiHyzw&s' },
-        { title: 'The Dark Knight', imageUrl: 'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg' },
+        { title: 'Shawshank Redemption', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb9670Mi_MG5ezDhuF-mDPXtisIFZZPiHyzw&s' },
+        { title: 'Dark Knight', imageUrl: 'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg' },
         { title: 'Pulp Fiction', imageUrl: 'https://play-lh.googleusercontent.com/R6EsEaQJa4sd1aPOtogDladldOa_Ku7R9g83qQfk5FG5ySElRgjz9pTcX1ztXkZwdbwWANwIcE6V-1BUbw' },
         { title: 'Forrest Gump', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxdqKXBL3df1JKBPA5fvwlDFKASdch1Z0OGA&s' },
-        { title: 'The Matrix', imageUrl: 'https://www.phenomena-experience.com/galeria/img_film/film_13509849101.jpeg' },
+        { title: 'Matrix', imageUrl: 'https://www.phenomena-experience.com/galeria/img_film/film_13509849101.jpeg' },
         { title: 'Goodfellas', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA4lre3kvvSDkWq0yifXF8NePLgG_5KUI1AQ&s' },
         { title: 'Interstellar', imageUrl: 'https://w0.peakpx.com/wallpaper/747/660/HD-wallpaper-interstellar-movie.jpg' },
         { title: 'Parasite', imageUrl: 'https://static.thcdn.com/images/large/original//productimg/1600/1600/12693286-1194851883693881.jpg' },
